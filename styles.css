@@ -10,3 +10,15 @@ body {
 img {
   max-height: 200px;
 }
+
+.ArrowDown {
+  transform: rotate(0.25turn);
+}
+
+.ArrowLeft {
+  transform: rotate(0.5turn);
+}
+
+.ArrowUp {
+  transform: rotate(0.75turn);
+}
