@@ -6,13 +6,17 @@ var carStyle = $car.style;
 var leftRight = 1;
 var currentX = 1;
 
-// var gas = setInterval(direction, 16);
+var gas = null;
 
 window.addEventListener('keydown', keyHandler);
 
 function keyHandler(event) {
   if (gameKeys.indexOf(event.key) < 0) {
     return;
+  }
+
+  if (event.key === ' ') {
+    gas = setInterval(direction, 16);
   }
 
   $car.className = 'car ' + event.key;
